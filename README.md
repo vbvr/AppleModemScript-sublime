@@ -9,8 +9,11 @@ called Communication Command Language (CCL) and the files are used with Apple Re
 syntax plugin allows the creation and modification of these files much easier.
 
 ### On Mac OS 9
+
 ![example in stock editor or BBEdit](shots/BBEdit.png "Viewing script file within BBEdit")
+
 ### On a modern computer
+
 ![example in Sublime Text](shots/Mariana.png "Viewing script file within Sublime Text")
 
 ## Download
@@ -41,7 +44,8 @@ mv AppleModemScript.zip "~/.config/sublime-text-3/Installed Packages/AppleModemS
 
 ### Windows
 
-On Windows, copy `AppleModemScript-sublime\AppleModemScript.sublime-syntax` to `%APPDATA%\Sublime Text 3\Packages\AppleModemScript\`  
+On Windows, copy `AppleModemScript-sublime\AppleModemScript.sublime-syntax` to
+`%APPDATA%\Sublime Text 3\Packages\AppleModemScript\`  
 (Re)open Sublime Text.
 
 ## Example Screenshots
