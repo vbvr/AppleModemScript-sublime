@@ -65,8 +65,8 @@ Check out my [profile](https://github.com/vbvr)!
 
 ## License
 
-vbvr, Copyright 2022
-See [LICENSE] for details.
+vbvr, Copyright 2022  
+See [LICENSE](./LICENSE) for details.
 
 ## Resources
 
