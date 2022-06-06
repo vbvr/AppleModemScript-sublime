@@ -8,14 +8,12 @@ On the classic Mac OS, dialup modem drivers were really just script files. The s
 called Communication Command Language (CCL) and the files are used with Apple Remote Access. This
 syntax plugin allows the creation and modification of these files much easier.
 
-![example in stock editor or BBEdit]('shots/BBEdit.png' "Viewing script file within BBEdit")
-![example in Sublime Text]('shots/Mariana.png' "Viewing script file within Sublime Text")
+### On Mac OS 9
+![example in stock editor or BBEdit](shots/BBEdit.png "Viewing script file within BBEdit")
+### On a modern computer
+![example in Sublime Text](shots/Mariana.png "Viewing script file within Sublime Text")
 
 ## Download
-
-### Binaries
-
- Prebuilt package can be found in the `/dist/` directory.
 
 ### Cloned from source
 
@@ -48,9 +46,10 @@ On Windows, copy `AppleModemScript-sublime\AppleModemScript.sublime-syntax` to `
 
 ## Example Screenshots
 
- ![image]('shots/Celeste.png' "Celeste Color Scheme")
- ![image]('shots/Monokai.png' "Monokai Color Scheme")  
- _Also see application example in /docs/_
+ ![image](shots/Celeste.png "Celeste Color Scheme")  
+  
+ ![image](shots/Monokai.png "Monokai Color Scheme")  
+ _See the resource link below for more information on getting the most out of Apple's CCL._
 
 ## Changelog
 
