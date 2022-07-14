@@ -5,7 +5,7 @@ Apple Remote Access modem script syntax plugin for Sublime Text.
 ## Overview
 
 On the classic Mac OS, dialup modem drivers were really just script files. The scripting langage is
-called Communication Command Language (CCL) and the files are used with Apple Remote Access. This
+called Connection Control Language (CCL) and the files are used with Apple Remote Access. This
 syntax plugin allows the creation and modification of these files much easier.
 
 ### On Mac OS 9

@@ -1,5 +1,5 @@
 %YAML 1.2
-# Communication Command Language (CCL) for use with Apple Remote Access modem scripts
+# Connection Control Language (CCL) for use with Apple Remote Access modem scripts
 # https://web.archive.org/web/20030916190858/http://developer.apple.com/macos/opentransport/docs/dev/ARA_Modem_Scripting_Guide.pdf
 #
 # Copyright 2022 Vadhym Beauvoir
