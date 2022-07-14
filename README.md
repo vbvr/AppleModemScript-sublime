@@ -54,9 +54,14 @@ On Windows, copy `AppleModemScript-sublime\AppleModemScript.sublime-syntax` to
   
  ![image](shots/Monokai.png "Monokai Color Scheme")  
  _See the resource link below for more information on getting the most out of Apple's CCL._
+ 
+## Guides
+
+[Dialup Server Guide for Mac OS](docs/DialupServerGuide.md)
 
 ## Changelog
 
+07/14/2022 - Dialup server guide for Mac OS added  
 06/05/2022 - Initial release
 
 ## Contact
