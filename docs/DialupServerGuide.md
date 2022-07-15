@@ -160,4 +160,4 @@ utility and set the script with creator code to `slnk` and the type to `mlts`.
 
 Apple Remote Access 3.0 Users Guide  
 [Apple Remote Access Modem Scripting Guide: Version 2.1](https://web.archive.org/web/20030916190858/http://developer.apple.com/macos/opentransport/docs/dev/ARA_Modem_Scripting_Guide.pdf)  
-[Jaghouse's modem page](https://www.jagshouse.com/modem.html)
+[Jagshouse's modem page](https://www.jagshouse.com/modem.html)
