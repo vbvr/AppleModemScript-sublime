@@ -1,13 +1,13 @@
 # Connect other dial-up machines to your network and the internet with your Mac OS modem
 
-Apple's Modem Scripts tell Mac OS how to get a dial-up modem to initialize, what to do when dialing
+Apple's Modem Scripts tell Mac OS how to tell a dial-up modem to initialize, what to do when dialing
 out and answering, how to tell the modem to maintain its ongoing connections. This 21st century guide
-will show how you can edit a Modem Script, to answer incoming calls without landline phone service
-(no dialtone).
+will show how you can edit a Modem Script, to answer incoming call and share your Internet connection
+without a landline phone service (no dialtone).
 
 ## Purpose
 
-Get any device equipped with a dial-up modem online again with the help of your classic Mac OS computer.
+Get any device equipped with a dial-up modem online again with the help of a classic Mac OS computer.
 
 ## Confirmed working with
 
@@ -51,7 +51,7 @@ then you will have more figuring out to do before continuing.
 
 * For editing from within Mac OS:
 
-  * Go to `:Macintosh HD:System Folder:Extensions:Modem Scripts` and duplicate the script you want to
+  * Go to `Macintosh HD:System Folder:Extensions:Modem Scripts` and duplicate the script you want to
   edit into another folder.
   * Open the duplicate file in your text editor. Since Mac OS sees the file as a modem script, you
   might need to do this through `File -> Open` and set Show to `Any file`  
@@ -59,12 +59,13 @@ then you will have more figuring out to do before continuing.
 
 * For editing from a modern OS with access to a netatalk server:
 
-  * Go to `:Macintosh HD:System Folder:Extensions:Modem Scripts` and duplicate the script you want to
+  * Go to `Macintosh HD:System Folder:Extensions:Modem Scripts` and duplicate the script you want to
   edit into your netatalk server.
   * Launch Sublime Text and open the modem script *without moving it off the server*. This will retain
   the file creator and type information.  
   ![Editor](img/subl.png)
-* In the file, look for the message `"ATA\13"` (the modem command to pick up the phone is `ATA`).
+
+* In the file, look for the message `"ATA\13"` (the modem command to pick up the phone is `ATA\r`).
 * Take note of the `@LABEL` value just above it. For me it was 88.
 * Look for `@ANSWER`. This is usually at the top, where the modem first gets initialized. Skip down
   to the first `ifANSWER` after this area of the script. Switch the `ifANSWER` value to the value you
@@ -72,7 +73,7 @@ then you will have more figuring out to do before continuing.
   ![Editing](img/Editing1.png) ---> ![Edit done](img/Editing2.png)  
   ![Editing](img/subl1.png) ---> ![Edit done](img/subl2.png)
 * Save the file and close your text editor.  
-* Add your new modem script to `:Macintosh HD:System Folder:Extensions:Modem Scripts`.
+* Add your new modem script to `Macintosh HD:System Folder:Extensions:Modem Scripts`.
 
 *Though untested, the netatalk method might also work with modern AppleShare servers on macOS.*
 
