@@ -2,7 +2,7 @@
 
 Apple's Modem Scripts tell Mac OS how to tell a dial-up modem to initialize, what to do when dialing
 out and answering, how to tell the modem to maintain its ongoing connections. This 21st century guide
-will show how you can edit a Modem Script, to answer incoming call and share your Internet connection
+will show how you can edit a Modem Script, to answer incoming calls and share your Internet connection
 without a landline phone service (no dialtone).
 
 ## Purpose
@@ -29,8 +29,8 @@ work with many of the older versions)
 
 * Apple Modem Scripting Guide
 
-For the purposes of this guide, the stock Apple Internal 56K Modem in a PowerMac Sawtooth and Mac OS
-9.2 are used, with BBEdit and Sublime Text as example editors.
+For the purposes of this guide, the stock Apple Internal 56K Modem in a PowerMac G4 AGP Graphics and
+Mac OS 9.2 are used, with BBEdit and Sublime Text as example editors.
 
 ## Computer Preparation
 
@@ -45,7 +45,9 @@ If the script for your modem is missing in the Extensions folder, you can check 
 of your Mac OS installation media, for the Additional Modem Scripts installer. You can also try
 using Apple's Modem Script Generator, as another option.  
 If you do not see any modem listed at all within Apple System Profiler or the TCP/IP Control Panel,
-then you will have more figuring out to do before continuing.
+then you will have more figuring out to do before continuing.  
+If you do not see the Apple Remote Access control panel, you can install it from the Mac OS 9
+installer.
 
 ## Script Preparation
 
@@ -54,7 +56,7 @@ then you will have more figuring out to do before continuing.
   * Go to `Macintosh HD:System Folder:Extensions:Modem Scripts` and duplicate the script you want to
   edit into another folder.
   * Open the duplicate file in your text editor. Since Mac OS sees the file as a modem script, you
-  might need to do this through `File -> Open` and set Show to `Any file`  
+  might need to do this through `File -> Open` and set Show to `Any file`.  
   ![Editor](img/Editor.png)
 
 * For editing from a modern OS with access to a netatalk server:
@@ -88,22 +90,22 @@ then you will have more figuring out to do before continuing.
 
 * Launch `Control Panels -> File Sharing`
   * Go to Users & Groups tab
-  * Click Open for owner (or click New User)
-    * For Identity, set a name and password
+  * Click Open for owner (or click New User).
+    * For Identity, set a name and password.
     * (optional) For Sharing, check the boxes for "Allow user to connect to this computer", "Allow
-    user to see all disks" and/or "Allow user to link to programs"
+    user to see all disks" and/or "Allow user to link to programs".
     * For Remote Access, check the box for "Allow user to dial in to this computer".
 
 * Launch `Control Panels -> Remote Access`
   * *The main Remote Access window can be ignored.*
   * Open `RemoteAccess -> Answering...`
   * Select *Answer calls*, *Allow access to entire network*, and *Allow TCP/IP clients to connect
-  using PPP*
+  using PPP*.
   * (optional) Set the Maximum Connection Time, the default IP address, and/or allow the calling
   machine's software to set their own IP address. Whether the latter two will work are totally
   dependent on your network's routing rules and the calling machine's TCP/IP options.  
   ![Answering](img/Answering.png)  
-**Important: Do not click OK yet**
+**Important: Do not click OK yet.**
 
 ## Caller Preparation
 
@@ -121,13 +123,13 @@ Finally, get your calling machine set up.
 ### Timing counts here
 
 1. Have the calling machine dial to connect.
-2. On your Mac, click OK in `Answering`
-3. Listen to the modem sounds and/or watch the Statuses between your Mac and the calling device.
+2. On your Mac, click OK in `Answering`.
+3. Listen to the modem sounds and/or watch the status between your Mac and the calling device.  
 ![Answering2](img/Answering2.png)
 ![Answering3](img/Answering3.png)
 4. If the connection was successful, you will see Connected at 33600bps or lower (this value can be
 different based on the calling modem's speed and any noise getting into the telephone line).  
-![image](img/Connected.png)  
+![Connected](img/Connected.png)  
 *(optional) `RemoteAccess -> Avtivity` log (⌘+L) can show logs of what's happening during the call
 session.*
 
@@ -153,7 +155,7 @@ There's much less to do now:
 * If the calling machine does not find a connection, uncheck "Answer calls" in `Answering` first, then
 try the following:
   * Do steps 1 and 2 in reverse.
-  * Add a battery to the phone line, to [simulate POTS current](https://www.jagshouse.com/modem.html).
+  * Add a battery and capacitor to the phone line, to [simulate POTS current](https://www.jagshouse.com/modem.html).
 * If your new modem script loses its file descriptions along the way, use your favorite creator/type
 utility and set the script with creator code to `slnk` and the type to `mlts`.
 
